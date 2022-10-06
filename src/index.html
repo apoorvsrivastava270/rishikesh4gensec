@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" class="min-height-screen h-screen overflow-y-scroll cursor-default scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me |  Lorem Ipsum</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/textdeco.css">
+    <script defer src="../src/index.js"></script>
+</head>
+
+<body>
+    <div id="loader" class="loadingscreen min-h-screen flex justify-center items-center bg-black">
+        <img src="../media/finalbacklogo.png" class="hi animate-solarpulse h-80" alt="">
+    </div>
+    <div id="content" class="main min-h-full flex flex-col justify-center items-center bg-black hidden">
+        <div class="min-h-screen flex w-full flex-col items-center justify-center">
+            <div onclick="burger2()" id="burger"
+                class="burger z-10 w-full bg-black flex justify-center items-center md:hidden py-5 ">
+                <img src="../media/burger.png" id="burgimg" class="w-12 duration-300 cursor-pointer" alt="">
+            </div>
+            <div id="menu"
+                class="menu flex flex-col relative font-Reem justify-center items-center md:hidden transition-all ease-out duration-1000 hidden opacity-0">
+                <div class="elem text-yellow-400 text-2xl py-4">
+                    <a href="#aboutme">About Me</a>
+                </div>
+                <div class="elem text-blue-500 text-2xl py-4">
+                    <a href="#creds">Credentials</a>
+                </div>
+                <div class="elem text-red-600 text-2xl py-4">
+                    <a href="#agenda">Agenda</a>
+                </div>
+                <div class="elem text-cyan-300 text-2xl py-4">
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="navpane flex justify-center md:justify-between w-4/5 items-center font-Reem text-4xl lg:text-5xl">
+                <div class="leftnav hidden md:flex flex-col justify-between items-center">
+                    <div class="t1 text-yellow-400">
+                        <a href="#aboutme">About Me</a>
+                    </div>
+                    <div class="t2 text-blue-500">
+                        <a href="#creds">Credentials</a>
+                    </div>
+                </div>
+                <div class="img flex justify-center items-center" onmouseover="hoverchangeover()"
+                    onmouseout="hoverchangeout()">
+                    <img src="../media/Panda Main.jpeg" class="rounded-full w-80 border-white border-8" alt="">
+                </div>
+                <div class="rightnav hidden md:flex flex-col justify-between items-center">
+                    <div class="t3 text-red-600">
+                        <a href="#agenda">Agenda</a>
+                    </div>
+                    <div class="t4 text-cyan-300">
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center w-full items-end">
+                <div class="leftlinks hidden md:flex justify-around items-center w-1/5 py-1">
+                    <a href="https://github.com/redrodeo03"><img src="../media/github.png" alt="" class="smalllogo w-12 duration-300 hover:scale-105"></a>
+                    <a href="https://mobile.twitter.com/rishikeshpanda8" target="_blank"><img src="../media/twt.png" alt="" class="smalllogo w-12 duration-300 hover:scale-105"></a>
+                </div>
+                <div id="maintitle" class="about font-Reem text-white text-4xl md:text-5xl lg:text-6xl text-center py-1"
+                    onmouseover="hoverchangeover()" onmouseout="hoverchangeout()">
+                    Hi. I am <span id="rishi" class="hi text-pink-600 duration-300">Rishikesh</span> <span id="panda"
+                        class="text-white duration-300">Panda.</span><br>I am contesting for the post of<br><span
+                        class="text-pink-600 duration-300" id="gen">General</span> <span class="text-white duration-300"
+                        id="sec">Secretary.</span>
+                </div>
+                <div class="rightlinks hidden md:flex justify-around items-center w-1/5 py-1">
+                    <a href="https://www.linkedin.com/in/rishikesh-panda-1b5b3a215/" target="_blank"><img src="../media/linkedin.png"
+                            alt="" class=" smalllogo w-12 duration-300 hover:scale-105"></a>
+                    <a href="https://www.instagram.com/rishikeshpanda03/" target="_blank"><img src="../media/insta.png" alt=""
+                            class="smalllogo w-12 duration-300 hover:scale-105"></a>
+                </div>
+            </div>
+            <div class="links flex flex-col md:hidden w-full">
+                <div class="toplinks flex justify-around items-center py-5">
+                    <a href="https://github.com/redrodeo03"><img src="../media/github.png" alt="" class="w-12 duration-300 hover:scale-105 hover:sepia smalllogo"></a>
+                    <a href="https://mobile.twitter.com/rishikeshpanda8" target="_blank"><img src="../media/twt.png" alt="" class="smalllogo w-12 duration-300 hover:scale-105"></a>
+                </div>
+                <div class="bottomlinks flex justify-around items-center py-5">
+                    <a href="https://www.linkedin.com/in/rishikesh-panda-1b5b3a215/" target="_blank"><img src="../media/linkedin.png" alt="" class="smalllogo w-12 duration-300 hover:scale-105"></a>
+                    <a href="https://www.instagram.com/rishikeshpanda03/" target="_blank"><img src="../media/insta.png" alt=""
+                            class="smalllogo w-12 duration-300 hover:scale-105"></a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-start md:justify-center min-h-screen bg-black">
+            <div class="parent bg-black">
+                <div class="left flex md:flex-col font-Bungee items-center justify-center md:items-start text-transparent md:h-screen w-full md:w-24 text-3xl md:text-5xl sticky top-0 left-0 font-medium overflow-hidden">
+                    <div>#</div>
+                    <div>V</div>
+                    <div>o</div>
+                    <div>t</div>
+                    <div>e</div>
+                    <div>F</div>
+                    <div>o</div>
+                    <div>r</div>
+                    <div>P</div>
+                    <div>a</div>
+                    <div>n</div>
+                    <div>d</div>
+                    <div>a</div>
+                </div>
+            </div>
+            <div
+                class="right py-10 md:py-0 rounded-xl min-h-screen flex flex-col font-Reem md:justify-center items-center overflow-hidden overflow-y-scroll">
+                <div id="aboutme" class="aboutme flex flex-col justify-center items-center text-center md:min-h-screen">
+                    <div class="heading flex justify-center items-center">
+                        <h1 class="text-4xl md:text-6xl text-yellow-400">Who am I?</h1>
+                    </div>
+                    <div class="conto w-11/12 md:w-2/3">
+                        <div class="staticachieve text-white text-xl md:text-4xl">
+                            Even after introducing myself to a thousand clubs and
+                            departments, I still don't have a good answer to this!<br>
+                            To keep things simple, as long as I have my laptop and food,
+                            all is well!<br>
+                            And... If you ever see me at breakfast, its safe to assume that
+                            I will be going to sleep soon after.
+                        </div>
+                    </div>
+                </div>
+                <div id="creds" class="creds py-10 flex flex-col justify-center items-center text-center md:min-h-screen">
+                    <div class="heading flex justify-center items-center">
+                        <h1 class="text-4xl md:text-6xl text-blue-500">My Credentials</h1>
+                    </div>
+                    <div class="conto flex justify-center items-center flex-col w-full">
+                        <div class="dynachieve w-full text-white text-xl md:text-4xl flex justify-center items-center">
+                            <div class="dyn1 w-1/2 flex flex-col justify-center items-center py-5">
+                                I am a part of
+                                <div class="clubname flex flex-col justify-center items-center">
+                                    <div class="aero">
+                                        aero
+                                    </div>
+                                    <div class="docw font-Pangolin">
+                                        Department of<br>
+                                        <span class="text-blue-500">Cre</span><span
+                                            class="text-orange-700">at</span><span class="text-lime-400">ive</span>
+                                        Works
+                                    </div>
+                                </div>
+                                as a <span class="text-pink-600">Core Member.</span>
+                            </div>
+                            <div class="dyn2 w-1/2 flex flex-col justify-center items-center py-5">
+                                I am a part of
+                                <div class="clubname flex flex-col justify-center items-center">
+                                    <div class="pegasus">
+                                        Team Pegasus
+                                    </div>
+                                    <div class="devsoc text-emerald-900">
+                                        DevSoc
+                                    </div>
+                                    <div class="gdsc text-slate-300">
+                                        Google Student Developer Clubs
+                                    </div>
+                                </div>
+                                as a <span class="text-pink-600">Member.</span>
+                            </div>
+                        </div>
+                        <div class="other text-white text-2xl">
+                            <ul class="hi list-disc">
+                                <li>
+                                    I have held (Growth and Operations)
+                                    Internships and Positions of Responsibility
+                                    (POR's) at Organizations and Startups
+                                </li><br>
+                                <li>Prefect Body in High School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="agenda" class="agenda w-11/12 py-10 flex flex-col justify-center items-center text-center md:min-h-screen">
+                    <div class="heading flex justify-center items-center">
+                        <h1 class="text-4xl md:text-6xl text-red-600">My Agenda</h1>
+                    </div>
+                    <div class="maindd w-full flex flex-col justify-center text-lg md:text-xl text-left rounded-sm text-white">
+                        <div onmouseover="arrowhover('a0')" onmouseout="arrowhoveroff('a0')"
+                            class="plan w-full flex justify-between items-center border-b-white border-b-2 cursor-pointer">
+                            <div class="text-2xl md:text-3xl py-1 px-2 w-4/5">Plan</div>
+                            <div id="a0" class="arrow rotate-90 duration-500">></div>
+                        </div>
+                        <div class="plancontents flex flex-col justify-center items-start py-5">
+                            <div class="top">
+                                Let's go through the steps of the proposed plan as General Secretary:
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                <img src="../media/pin.png" width="40px" alt="">
+                                <div class="cc px-2">
+                                    <span class="text-pink-600 text-xl md:text-2xl">Step-1:</span> Make an Agenda that positively
+                                    affects maximum number of students.
+                                </div>
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                <img src="../media/pin.png" width="40px" alt="">
+                                <div class="cc px-2">
+                                    <span class="text-pink-600 text-xl md:text-2xl">Step-2:</span> Check for Viability of the
+                                    plans.
+                                </div>
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                <img src="../media/pin.png" width="40px" alt="">
+                                <div class="cc px-2">
+                                    <span class="text-pink-600 text-xl md:text-2xl">Step-3:</span> Actually implement the
+                                    accepted plans in a planned
+                                    and proper method.
+                                </div>
+                            </div>
+                        </div>
+                        <div onmouseover="arrowhover('a1')" onmouseout="arrowhoveroff('a1')"
+                            class="plan flex justify-between items-center border-b-white border-b-2 cursor-pointer">
+                            <div class="text-2xl md:text-3xl py-1 px-2 w-4/5">1. Scheduled buses from the main gate to Panjim and
+                                Madgaon on weekends</div>
+                            <div id="a1" class="arrow rotate-90 duration-500">></div>
+                        </div>
+                        <div class="p1cont flex flex-col justify-center items-end py-5">
+                            <div class="step flex justify-center items-center py-3">
+                                <div class="cc px-2">
+                                    <span class="text-pink-600 text-xl md:text-2xl">Problem:</span> Travel is a sore spot in the
+                                    life of every BITSian.
+                                </div>
+                                <img src="../media/car.png" width="80px" alt="">
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                <div class="cc px-2">
+                                    <div class="text-pink-600 text-xl md:text-2xl">Proposal:</div>
+                                    <div class="ul">
+                                        <ul class="list-disc">
+                                            <li>Regulate a Weekend Travel
+                                                System.</li>
+                                            <li>Two buses (to start with)
+                                                take students to Panaji and
+                                                Madgaon.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img src="../media/bus.png" width="80px" alt="">
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                <div class="cc px-2">
+                                    <div class="text-pink-600 text-xl md:text-2xl">Viability:</div>
+                                    <div class="ul">
+                                        <ul class="list-disc">
+                                            <li>
+                                                Have a minimum number
+                                                of seats booked for buses
+                                                to run.
+                                            </li>
+                                            <li>
+                                                Issue either a weekly pass
+                                                or a one-time payment
+                                                system to have an
+                                                estimation of bookings.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img src="../media/tick.png" width="80px" alt="">
+                            </div>
+                        </div>
+                        <div onmouseover="arrowhover('a2')" onmouseout="arrowhoveroff('a2')"
+                            class="plan flex justify-between items-center border-b-white border-b-2 cursor-pointer">
+                            <div class="text-2xl md:text-3xl py-1 px-2 w-4/5">2. An air-conditioned study area that is Open 24x7</div>
+                            <div id="a2" class="arrow rotate-90 duration-500">></div>
+                        </div>
+                        
+                        <div class="p2cont flex flex-col justify-center items-start py-5">
+                            <div class="step flex justify-center items-center py-3">
+                                <img src="../media/temp.png" width="80px" alt="">
+                                <div class="cc px-2">
+                                    <div class="text-pink-600 text-xl md:text-2xl">Problem:</div>
+                                    <div class="ul">
+                                        <ul class="list-disc">
+                                            <li>No Comfortable Areas to
+                                                work/study are open 24x7.</li>
+                                            <li>The Weather makes
+                                                studying in the rooms very
+                                                tough at times.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                <img src="../media/ac.png" width="80px" alt="">
+                                <div class="cc px-2">
+                                    <div class="text-pink-600 text-xl md:text-2xl">Proposal:</div>
+                                    <div class="ul">
+                                        <ul class="list-disc">
+                                            <li>Keep a designated area open
+                                                24 hrs.</li>
+                                            <li>This could be either a
+                                                section of the library, a DLT,
+                                                or even a couple of
+                                                classrooms.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                <img src="../media/emp.png" width="80px" alt="">
+                                <div class="cc px-2">
+                                    <span class="text-pink-600 text-xl md:text-2xl">Viability:</span> Less personnel required
+                                    than keeping the whole
+                                    library open.
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div onmouseover="arrowhover('a3')" onmouseout="arrowhoveroff('a3')"
+                            class="plan flex justify-between items-center border-b-white border-b-2 cursor-pointer">
+                            <div class="text-2xl md:text-3xl py-1 px-2 w-4/5">3. Bringing vending machines to campus</div>
+                            <div id="a3" class="arrow rotate-90 duration-500">></div>
+                        </div>
+
+                        <div class="p3cont flex flex-col justify-center items-end py-5">
+                            <div class="step flex justify-center items-center py-3">
+                                
+                                <div class="cc px-2">
+                                    <div class="text-pink-600 text-xl md:text-2xl">Problem:</div>
+                                    <div class="ul">
+                                        <ul class="list-disc">
+                                            <li>No 24x7 Eateries on
+                                                campus for sudden
+                                                hunger!</li>
+                                            <li>This becomes essential
+                                                especially during exams.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img src="../media/fastf.png" width="80px" alt="">
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                
+                                <div class="cc px-2">
+                                    <div class="text-pink-600 text-xl md:text-2xl">Proposal:</div>
+                                    <div class="ul">
+                                        <ul class="list-disc">
+                                            <li>Install Vending machines
+                                                around popular spots on
+                                                campus.</li>
+                                            <li>Make sure they're regularly
+                                                restocked and maintained
+                                                over time.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img src="../media/vending-machine.png" width="80px" alt="">
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                
+                                <div class="cc px-2">
+                                    <div class="text-pink-600 text-xl md:text-2xl">Viability:</div>
+                                    <div class="ul">
+                                        <ul class="list-disc">
+                                            <li>Easy to arrange and stock
+                                                with basic snacks and drinks.</li>
+                                            <li>No manpower required in
+                                                general to maintain.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img src="../media/snacc.png" width="80px" alt="">
+                            </div>
+                        </div>
+
+                        <div onmouseover="arrowhover('a4')" onmouseout="arrowhoveroff('a4')"
+                            class="plan flex justify-between items-center border-b-white border-b-2 cursor-pointer">
+                            <div class="text-2xl md:text-3xl py-1 px-2 w-4/5">4. Option to use money from our SWD accounts for shops
+                                inside campus</div>
+                            <div id="a4" class="arrow rotate-90 duration-500">></div>
+                        </div>
+
+                        <div class="p4cont flex flex-col justify-center items-start py-5">
+                            <div class="step flex justify-center items-center py-3">
+                                <img src="../media/slow.png" width="80px" alt="">
+                                <div class="cc px-2">
+                                    <span class="text-pink-600 text-xl md:text-2xl">Problem:</span> The money in the SWD
+                                    account is not being
+                                    utilized very efficiently.
+                                </div>
+                                
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                <img src="../media/qr.png" width="80px" alt="">
+                                <div class="cc px-2">
+                                    <div class="text-pink-600 text-xl md:text-2xl">Proposal:</div>
+                                    <div class="ul">
+                                        <ul class="list-disc">
+                                            <li>Research a seamless way to
+                                                integrate payments with the
+                                                student's account.</li>
+                                            <li>Try out either a QR system
+                                                or pay through ID cards.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                <img src="../media/phone.png" width="80px" alt="">
+                                <div class="cc px-2">
+                                    <span class="text-pink-600 text-xl md:text-2xl">Problem:</span> We'll have a one-stop portal
+                                    (CSA app), which has all the
+                                    information we would ever
+                                    need on a daily basis
+                                </div>
+                                
+                            </div>
+                        </div>
+
+
+                        <div onmouseover="arrowhover('a5')" onmouseout="arrowhoveroff('a5')"
+                            class="plan flex justify-between items-center border-b-white border-b-2 cursor-pointer">
+                            <div class="text-2xl md:text-3xl py-1 px-2 w-4/5">5. Improve Internet Connectivity and Unban certain games
+                                on campus-net</div>
+                            <div id="a5" class="arrow rotate-90 duration-500">></div>
+                        </div>
+
+                        <div class="p5cont flex flex-col justify-center items-end py-5">
+                            <div class="step flex justify-center items-center py-3">
+                                
+                                <div class="cc px-2">
+                                    <div class="text-pink-600 text-xl md:text-2xl">Problem:</div>
+                                    <div class="ul">
+                                        <ul class="list-disc">
+                                            <li>The range of campus wifi
+                                                does not cover important
+                                                areas like LTs and Messes.</li>
+                                            <li>All video games and
+                                                related software have
+                                                been banned</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img src="../media/wifi.png" width="80px" alt="">
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                
+                                <div class="cc px-2">
+                                    <div class="text-pink-600 text-xl md:text-2xl">Proposal:</div>
+                                    <div class="ul">
+                                        <ul class="list-disc">
+                                            <li>Install more routers across
+                                                campus to have a stable
+                                                range across the institute.</li>
+                                            <li>Unban a certain number of
+                                                the most popular games
+                                                every semester by student
+                                                choice.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img src="../media/game.png" width="80px" alt="">
+                            </div>
+                            <div class="step flex justify-center items-center py-3">
+                                
+                                <div class="cc px-2">
+                                    <div class="text-pink-600 text-xl md:text-2xl">Viability:</div>
+                                    <div class="ul">
+                                        <ul class="list-disc">
+                                            <li>A better connection would
+                                                in general boost
+                                                productivity.</li>
+                                            <li>Still maintain the 8GB daily
+                                                data limit to prevent us
+                                                from going overboard with
+                                                gaming.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img src="../media/happy.png" width="80px" alt="">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="contact" class="contact flex flex-col justify-center items-center text-center min-h-screen w-full">
+                        <div class="heading flex justify-center items-center">
+                            <h1 class="text-4xl md:text-6xl text-cyan-300">Tell me what to do!<br>My Job is to listen :)</h1>
+                        </div>
+                        <div class="conto w-11/12 md:w-2/3">
+                            <div class="staticachieve text-white text-xl md:text-4xl py-10">
+                                Hostel: AH-7 212<br>
+                                E-Mail: f20211822@goa.bits-pilani.ac.in
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer w-11/12 flex flex-col justify-center items-center text-white">
+            <div class="upperfoot">
+                © Lorem Ipsum - 2022
+            </div>
+            <div class="bottomfoot w-full flex justify-around items-center">
+                <div class="pagenavs flex flex-col justify-center items-center">
+                    <div class="navtop flex justify-center items-center">
+                        <div class="elem text-yellow-400 text-md p-2">
+                            <a href="#aboutme">About Me</a>
+                        </div>
+                        <div class="elem text-blue-500 text-md p-2">
+                            <a href="#creds">Credentials</a>
+                        </div>
+                    </div>
+                    <div class="navdown flex justify-between items-center">
+                        <div class="elem text-red-600 text-md p-2">
+                            <a href="#agenda">Agenda</a>
+                        </div>
+                        <div class="elem text-cyan-300 text-md p-2">
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="socials flex flex-col justify-center items-center">
+                    <div class="header">
+                        Follow me on my Socials!
+                    </div>
+                    <div class="sociallinks flex justify-center items-center">
+                        <div class="socialtop">
+                            <a href="https://github.com/redrodeo03" target="_blank"><img src="../media/github.png" class="w-10 py-5 duration-300 hover:scale-105 smalllogo" alt=""></a>
+                            <a href="https://www.linkedin.com/in/rishikesh-panda-1b5b3a215/" target="_blank"><img src="../media/linkedin.png" class="w-10 py-5 duration-300 hover:scale-105 smalllogo" alt=""></a>
+                        </div>
+                        <div class="socialdown px-5">
+                            <a href="https://www.instagram.com/rishikeshpanda03/" target="_blank"><img src="../media/insta.png" class="w-10 py-5 duration-300 hover:scale-105 smalllogo" alt=""></a>
+                            <a href="https://mobile.twitter.com/rishikeshpanda8" target="_blank"><img src="../media/twt.png" class="w-10 py-5 duration-300 hover:scale-105 smalllogo" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

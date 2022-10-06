@@ -1,0 +1,85 @@
+.left{
+    animation: animate 20s linear infinite;
+    background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#ff00c4,#ff0000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 400%;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+@font-face {
+    font-family: 'Danube Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Danube Regular'), url('../src/DANUBE__.woff') format('woff');
+    }
+    
+
+@font-face {
+    font-family: 'Danube Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Danube Bold'), url('/DANUB___.woff') format('woff');
+    }
+
+.aero{
+    font-family: 'Danube Regular';
+}
+
+@font-face {
+    font-family: 'BankGothic';
+    src: url("../src/Bank\ Gothic\ Medium.otf") format("opentype");
+}
+
+.pegasus{
+    font-family: 'BankGothic';
+}
+
+@font-face {
+    font-family: 'DevSoc';
+    src: url("../src/ethnocentric\ rg.otf") format("opentype");
+}
+
+.devsoc{
+    font-family: 'DevSoc';
+}
+
+@font-face {
+    font-family: 'ProdSans';
+    src: url("../src/Product\ Sans\ Regular.ttf") format("opentype");
+}
+
+.gdsc{
+    font-family: 'ProdSans';
+}
+.footer{
+    font-family: 'ProdSans';
+}
+
+.contact{
+    animation: animater 20s linear infinite;
+    background: url('../media/collage.png');
+    background-size:cover;
+}
+@keyframes animater{
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
+
+.smalllogo:hover{
+    filter: invert(31%) sepia(87%) saturate(7447%) hue-rotate(311deg) brightness(99%) contrast(115%);
+}
